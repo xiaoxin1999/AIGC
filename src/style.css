@@ -1,10 +1,11 @@
-/* html, body {
-  background-color: #000; 
-  margin: 0;
+/* 首先为html和body设置高度100% */
+html, body {
+  height: 100%;
+  margin: 0; /* 去除默认的边距 */
   padding: 0;
 }
 
+/* 设置 id 为 app 的根元素高度 */
 #app {
-  min-height: 100vh;
-  background-color: #000;
-} */
+  height: 100%;
+}
