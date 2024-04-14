@@ -12,7 +12,6 @@ export default defineComponent({
     <el-container>
       <el-header>Header</el-header>
       <el-main>Main</el-main>
-      <el-footer>Footer</el-footer>
     </el-container>
   </div>
 </template>
@@ -38,9 +37,6 @@ export default defineComponent({
     flex: 1; // 使用flex来填充剩余空间
     overflow: auto; // 如果内容超出，允许滚动
   }
-  .el-footer{
-    // 如果你想要一个固定高度的 header，这里指定
-    // 否则如果是动态高度，则不需要设置
-  }
+
 }
 </style>
