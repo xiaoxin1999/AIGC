@@ -21,7 +21,8 @@ export default defineComponent({
 /* 接着针对您的布局设置为100% */
 .common-layout {
   height: 100%;
-
+  // 添加渐变背景
+  background: linear-gradient(0deg, rgba(23, 21, 58, 1) 0%, rgba(32, 29, 71, 1) 100%);
   .el-container {
     height: 100%;
     display: flex;
