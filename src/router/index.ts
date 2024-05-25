@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
-import Home from '../views/Home/Home.vue' //导入首页组件
-import Login from '../views/Login/Login.vue' //导入登陆组件
+import Home from '../views/Home/Home.vue'
+import Login from '../views/Login/Login.vue'
 import Register from '../views/Register/register.vue'
-import About from '../views/About/About.vue' //导入关于组件
-import NotFound from '../views/404/404.vue' // 导入404组件
+import About from '../views/About/About.vue'
+import NotFound from '../views/404/404.vue'
 
 // 使用 RouteRecordRaw 来说明这是一个路由记录数组
 const routes: RouteRecordRaw[] = [

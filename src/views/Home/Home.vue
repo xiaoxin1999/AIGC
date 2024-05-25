@@ -1,20 +1,11 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'Home'
-  // 其他选项 ...
-})
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="common-layout">
     <el-container>
       <el-header>
         <div class="header-layout">
-          <div class="logo">
-            AIGC
-          </div>
+          <div class="logo">AIGC</div>
           <nav class="menu">
             <a href="#">首页</a>
             <a href="#">专业服务</a>
@@ -36,16 +27,16 @@ export default defineComponent({
 .common-layout {
   height: 100%;
   // 添加渐变背景
-  background: linear-gradient(0deg, rgba(23, 21, 58, 1) 0%, rgba(32, 29, 71, 1) 100%);
-  color: #fff;
+  // background: linear-gradient(0deg, rgba(23, 21, 58, 1) 0%, rgba(32, 29, 71, 1) 100%);
+  color: #000;
   .el-container {
     height: 100%;
     display: flex;
     flex-direction: column;
   }
   .el-header {
-    // 如果你想要一个固定高度的 header，这里指定
-    // 否则如果是动态高度，则不需要设置
+    height: 60px;
+    border-bottom: 1px solid #ccc;
 
     // 这里添加header的样式
     .header-layout {
@@ -55,7 +46,6 @@ export default defineComponent({
       align-items: center;
       height: 100%;
       .logo {
-        // 为LOGO添加需要的样式
         font-size: 24px;
       }
 
@@ -66,17 +56,16 @@ export default defineComponent({
         font-size: 14px;
         a {
           text-decoration: none;
-          color: white; // 设置链接文字的颜色
-          margin: 0 10px; // 给每个菜单项增加水平间距
-          // 更多样式...
+          color: #000;
+          margin: 0 10px;
         }
       }
     }
   }
 
   .el-main {
-    flex: 1; // 使用flex来填充剩余空间
-    overflow: auto; // 如果内容超出，允许滚动
+    flex: 1;
+    overflow: auto;
   }
 }
 </style>
